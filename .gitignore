@@ -13,5 +13,6 @@ reference/backend/node_modules/
 public/assets/aistudio/Endless-Moment-main_94763a46.zip
 *.apk
 
-# Allow the public frontend API endpoint (not a secret) to be deployed with Vite
-.env.production
+# Keep environment files out of Git; configure VITE_API_BASE_URL in build settings.
+
+*.zip
