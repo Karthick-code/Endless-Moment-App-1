@@ -1,0 +1,6 @@
+{
+  "name": "Endless Moment Admin Mobile",
+  "description": "Secure mobile admin application for Endless Moment studio owners with Google-verified two-factor authentication, biometric access, client enquiry management, and portfolio controls.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

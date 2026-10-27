@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <title>Endless Moment Admin Mobile</title>
+    <meta name="description" content="Secure mobile admin application for Endless Moment studio owners with Google-verified two-factor authentication, biometric access, client enquiry management, and portfolio controls." />
+    <meta property="og:title" content="Endless Moment Admin Mobile" />
+    <meta property="og:description" content="Secure mobile admin application for Endless Moment studio owners with Google-verified two-factor authentication, biometric access, client enquiry management, and portfolio controls." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="theme-color" content="#121316" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="EM Admin" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/svg+xml" href="/icon.svg" />
+    <script>
+      // Ignore harmless WebSocket disconnection messages from disabled HMR in sandbox environment
+      window.addEventListener('unhandledrejection', function (e) {
+        if (e.reason && (String(e.reason).includes('WebSocket') || e.reason?.stack?.includes('@vite/client'))) {
+          e.preventDefault();
+        }
+      });
+      window.addEventListener('error', function (e) {
+        if (e.message && String(e.message).includes('WebSocket')) {
+          e.preventDefault();
+        }
+      });
+    </script>
+  </head>
+  <body class="bg-[#0c0d10] text-[#f2ede4] antialiased select-none overscroll-none">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+
